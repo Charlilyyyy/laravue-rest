@@ -15,7 +15,7 @@ class UserRequest extends FormRequest
         return [
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email',
-            'password' => 'required|string|min:6|confirmed',
+            'password' => 'required|string|min:6',
         ];
     }
 
@@ -26,7 +26,7 @@ class UserRequest extends FormRequest
             'email.email' => 'Please provide a valid email address.',
             'email.unique' => 'This email is already in use.',
             'password.required' => 'The password field is required.',
-            'password.confirmed' => 'Password confirmation does not match.',
+            // 'password.confirmed' => 'Password confirmation does not match.',
             'password.min' => 'The password must be at least 6 characters long.',
         ];
     }
