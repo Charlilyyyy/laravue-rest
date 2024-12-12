@@ -1,6 +1,6 @@
-<sciprt setup lang="ts">
+<script setup lang="ts">
 import Form from '../components/Form'
-</sciprt>
+</script>
 
 <template>
     <Form></Form>
